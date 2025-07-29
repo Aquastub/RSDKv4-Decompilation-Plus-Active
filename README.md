@@ -47,7 +47,9 @@ This project uses [CMake](https://cmake.org/), a versatile building system that 
 
 ## Get the source code
 
-In order to clone the repository, you need to install Git, which you can get [here](https://git-scm.com/downloads).
+**DO NOT** download the source code ZIP archive from GitHub, as they do not include the submodules required to build the decompilation.
+
+Instead, you will need to clone the repository using Git, which you can get [here](https://git-scm.com/downloads).
 
 Clone the repo **recursively**, using:
 `git clone --recursive https://github.com/RSDKModding/RSDKv4-Decompilation`
@@ -71,7 +73,7 @@ Finally, follow the [compilation steps below](#compiling) using `-DCMAKE_TOOLCHA
 Install the following dependencies: then follow the [compilation steps below](#compiling):
 - **pacman (Arch):** `sudo pacman -S base-devel cmake glew sdl2 libogg libvorbis`
 - **apt (Debian/Ubuntu):** `sudo apt install build-essential cmake libglew-dev libglfw3-dev libsdl2-dev libogg-dev libvorbis-dev`
-- **rpm (Fedora):** `sudo dnf install make gcc cmake glew-devel glfw-devel sdl2-devel libogg-devel libvorbis-devel zlib-devel`
+- **rpm (Fedora):** `sudo dnf install make gcc cmake glew-devel glfw-devel SDL2-devel libogg-devel libvorbis-devel zlib-devel`
 - **apk (Alpine/PostmarketOS)** `sudo apk add build-base cmake glew-dev glfw-dev sdl2-dev libogg-dev libvorbis-dev`
 - Your favorite package manager here, [make a pull request](https://github.com/RSDKModding/RSDKv4-Decompilation/fork)
 

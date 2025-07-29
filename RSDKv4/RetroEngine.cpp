@@ -352,7 +352,7 @@ void RetroEngine::Init()
                     InitStartingStage(startList_Game == 0xFF ? STAGELIST_PRESENTATION : startList_Game, startStage_Game == 0xFF ? 0 : startStage_Game,
                                       startPlayer == 0xFF ? 0 : startPlayer);
                 }
-                else if (startSave != 0xFF && startSave < 4) {
+                else if (startSave != 0xFF && startSave <= 4) {
                     if (startSave == 0) {
                         SetGlobalVariableByName("options.saveSlot", 0);
                         SetGlobalVariableByName("options.gameMode", 0);
@@ -449,7 +449,7 @@ void RetroEngine::Init()
         AddAchievement("Ramp Ring Acrobatics",
                        "Without touching the ground,\rcollect all the rings in a\rtrapezoid formation in Green\rHill Zone Act 1");
         AddAchievement("Blast Processing", "Clear Green Hill Zone Act 1\rin under 30 seconds");
-        AddAchievement("Secret of Marble Zone", "Travel though a secret\rroom in Marbale Zone Act 3");
+        AddAchievement("Secret of Marble Zone", "Travel though a secret\rroom in Marble Zone Act 3");
         AddAchievement("Block Buster", "Break 16 blocks in a row\rwithout stopping");
         AddAchievement("Ring King", "Collect 200 Rings");
         AddAchievement("Secret of Labyrinth Zone", "Activate and ride the\rhidden platform in\rLabyrinth Zone Act 1");
